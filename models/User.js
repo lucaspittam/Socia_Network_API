@@ -5,14 +5,14 @@ const UserSchema = new Schema (
         username: {
             type: String,
             unique: true,
-            required: "Please enter a username!",
+            required: "Enter a username!",
             trim: true
         },
         email: {
             type: String,
             unique: true,
-            required: "Please enter an email address!",
-            match: [`/.+\@.+\..+/`] //regex to validate the email address.
+            required: "Enter an email address!",
+            match: [`/.+\@.+\..+/`] //regex
         },
         thoughts: [],
         friends: []
@@ -25,12 +25,10 @@ const UserSchema = new Schema (
     }
 );
 
-//friendCount virtual retrieves the length of a user's friends array on query.
 UserSchema.virtual('friendCount').get(function() {
     return this.friends.length;
 });
 
-//create model using the UserSchema
 const User = model('User', UserSchema);
 
 module.exports = User; 
