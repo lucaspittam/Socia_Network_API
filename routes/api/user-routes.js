@@ -5,7 +5,9 @@ const {
     getUserById,
     createUser,
     updateUser,
-    deleteUser
+    deleteUser,
+    addFriend,
+    removeFriend
 } = require('../../controllers/user-controller');
 
 //GET and POST routes
@@ -15,12 +17,17 @@ router
     .post(createUser)
 
 
-//GET one, PUT, and DELETE
+//set up GET single, PUT, and DELETE
 router
     .route('/:id')
     .get(getUserById)
     .put(updateUser)
     .delete(deleteUser)
 
+// POST and DELETE routes for ID
+router
+    .route('/:userId/friends/:friendId')
+    .post(addFriend)
+    .delete(removeFriend)
 
 module.exports = router;
