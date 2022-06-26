@@ -3,7 +3,7 @@
 ## Description
   A simple social network api using MongoDB and Mongoose
 
-  ## Walthrough Video
+## Walkthrough Video
 
 
   ## Table of Contents
