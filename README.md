@@ -8,7 +8,7 @@
 
   ## Table of Contents
   * [Description](#description)
-  * [Walkthrough](#walkthrough video)
+  * [Walkthrough Video](#walkthrough video)
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
