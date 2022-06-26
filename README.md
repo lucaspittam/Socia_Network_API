@@ -3,12 +3,11 @@
 ## Description
   A simple social network api using MongoDB and Mongoose
 
-## Walkthrough Video
+
 
 
   ## Table of Contents
   * [Description](#description)
-  * [Walkthrough Video](#walkthrough video)
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
@@ -19,6 +18,8 @@
 
   ## Usage
   This app is a social network api back-end, You will need Insomnia to run routes and check functionality. You can POST, GET, PUT, and DELETE users, and thoughts.
+  ## Walkthrough Video
+  Link
 
   ## License
   This software is licensed under the [MIT license](https://choosealicense.com/licenses/mit/).
